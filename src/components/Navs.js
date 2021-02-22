@@ -10,7 +10,7 @@ const Navs = () => (
   <div>
     <ul>
       {LINKS.map(item => (
-        <li>
+        <li key={Math.floor(Math.random() * 100)}>
           <Link to={item.to}>{item.text}</Link>
         </li>
       ))}
