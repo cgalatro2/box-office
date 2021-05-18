@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import React, { useEffect, useReducer } from 'react';
 import { useParams } from 'react-router-dom';
 import Details from '../components/show/Details';
@@ -6,8 +7,6 @@ import Seasons from '../components/show/Seasons';
 import Cast from '../components/show/Cast';
 import { apiGet } from '../misc/config';
 import { InfoBlock, ShowPageWrapper } from './Show.styled';
-
-/* eslint-disable */
 
 const reducer = (prevState, action) => {
   switch (action.type) {
